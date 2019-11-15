@@ -1,0 +1,14 @@
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos\bin\Debug\TestAr.Datos.dll.config
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos\bin\Debug\TestAr.Datos.dll
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos\bin\Debug\TestAr.Datos.pdb
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos\bin\Debug\EntityFramework.dll
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos\bin\Debug\TestAr.dll
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos\bin\Debug\TestAr.pdb
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos\bin\Debug\EntityFramework.xml
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos\obj\Debug\TestAr.Datos.csprojAssemblyReference.cache
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos\obj\Debug\TestAr.Datos.csproj.CoreCompileInputs.cache
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos\obj\Debug\TestAr.Datos.csproj.CopyComplete
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos\obj\Debug\TestAr.Datos.dll
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos\obj\Debug\TestAr.Datos.pdb

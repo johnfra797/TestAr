@@ -1,0 +1,14 @@
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Aplicacion\bin\Debug\TestAr.Aplicacion.dll
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Aplicacion\bin\Debug\TestAr.Aplicacion.pdb
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Aplicacion\bin\Debug\TestAr.Datos.dll
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Aplicacion\bin\Debug\EntityFramework.dll
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Aplicacion\bin\Debug\TestAr.dll
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Aplicacion\bin\Debug\TestAr.Datos.pdb
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Aplicacion\bin\Debug\TestAr.Datos.dll.config
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Aplicacion\bin\Debug\EntityFramework.xml
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Aplicacion\bin\Debug\TestAr.pdb
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Aplicacion\obj\Debug\TestAr.Aplicacion.csprojAssemblyReference.cache
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Aplicacion\obj\Debug\TestAr.Aplicacion.csproj.CoreCompileInputs.cache
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Aplicacion\obj\Debug\TestAr.Aplicacion.csproj.CopyComplete
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Aplicacion\obj\Debug\TestAr.Aplicacion.dll
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Aplicacion\obj\Debug\TestAr.Aplicacion.pdb
