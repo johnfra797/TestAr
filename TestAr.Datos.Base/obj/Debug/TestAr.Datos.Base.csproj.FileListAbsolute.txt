@@ -1,6 +1,0 @@
-C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos.Base\bin\Debug\TestAr.Datos.Base.dll
-C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos.Base\bin\Debug\TestAr.Datos.Base.pdb
-C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos.Base\obj\Debug\TestAr.Datos.Base.csprojAssemblyReference.cache
-C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos.Base\obj\Debug\TestAr.Datos.Base.csproj.CoreCompileInputs.cache
-C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos.Base\obj\Debug\TestAr.Datos.Base.dll
-C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos.Base\obj\Debug\TestAr.Datos.Base.pdb

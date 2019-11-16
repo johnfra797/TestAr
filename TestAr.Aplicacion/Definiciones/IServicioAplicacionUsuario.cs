@@ -8,5 +8,9 @@ namespace TestAr.Aplicacion.Definiciones
 {
     public interface IServicioAplicacionUsuario
     {
+        bool Guardar(Usuario usuario);
+        bool Eliminar(int idUsuario);
+        Usuario Obtener(int idUsuario);
+        List<Usuario> ObtenerTodos();
     }
 }

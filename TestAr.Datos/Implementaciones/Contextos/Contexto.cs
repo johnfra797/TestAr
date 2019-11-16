@@ -18,9 +18,15 @@ namespace TestAr.Datos.Implementaciones.Contextos
             Database.SetInitializer<Contexto>(null);
         }
         public IDbSet<Usuario> Usuario { get; set; }
+        public IDbSet<Permiso> Permiso { get; set; }
+        public IDbSet<Role> Role { get; set; }
+        public IDbSet<RolePermiso> RolePermiso { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new UsuarioMapping());
+            modelBuilder.Configurations.Add(new PermisoMapping());
+            modelBuilder.Configurations.Add(new RoleMapping());
+            modelBuilder.Configurations.Add(new RolePermisoMapping());
 
         }
     }

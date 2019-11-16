@@ -1,0 +1,13 @@
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.IoC\bin\Debug\TestAr.IoC.dll
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.IoC\bin\Debug\TestAr.IoC.pdb
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.IoC\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.IoC\bin\Debug\Unity.Abstractions.dll
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.IoC\bin\Debug\Unity.Container.dll
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.IoC\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.IoC\bin\Debug\Unity.Abstractions.pdb
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.IoC\bin\Debug\Unity.Container.pdb
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.IoC\obj\Debug\TestAr.IoC.csprojAssemblyReference.cache
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.IoC\obj\Debug\TestAr.IoC.csproj.CoreCompileInputs.cache
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.IoC\obj\Debug\TestAr.IoC.csproj.CopyComplete
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.IoC\obj\Debug\TestAr.IoC.dll
+C:\Users\jhon.castillo\Downloads\TestAr\TestAr.IoC\obj\Debug\TestAr.IoC.pdb

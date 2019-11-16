@@ -12,3 +12,17 @@ C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos\obj\Debug\TestAr.Datos.cspr
 C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos\obj\Debug\TestAr.Datos.csproj.CopyComplete
 C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos\obj\Debug\TestAr.Datos.dll
 C:\Users\jhon.castillo\Downloads\TestAr\TestAr.Datos\obj\Debug\TestAr.Datos.pdb
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\bin\Debug\TestAr.Datos.dll.config
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\bin\Debug\TestAr.Datos.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\bin\Debug\TestAr.Datos.pdb
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\bin\Debug\EntityFramework.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\bin\Debug\TestAr.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\bin\Debug\TestAr.pdb
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\bin\Debug\EntityFramework.xml
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\obj\Debug\TestAr.Datos.csprojAssemblyReference.cache
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\obj\Debug\TestAr.Datos.csproj.CoreCompileInputs.cache
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\obj\Debug\TestAr.Datos.csproj.CopyComplete
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\obj\Debug\TestAr.Datos.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\obj\Debug\TestAr.Datos.pdb

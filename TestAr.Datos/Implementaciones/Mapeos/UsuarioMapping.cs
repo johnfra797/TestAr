@@ -8,9 +8,9 @@ namespace TestAr.Datos.Implementaciones.Mapeos
         {
             HasKey(t => t.IdUsuario);
             ToTable("Usuario");
-            Property(t => t.IdUsuario).HasColumnName("IdUsuario".ToUpper());
-            Property(t => t.Nombre).HasColumnName("Nombre".ToUpper());
-            Property(t => t.Clave).HasColumnName("Clave".ToUpper());
+            Property(t => t.IdUsuario).HasColumnName("IdUsuario");
+            Property(t => t.Nombre).HasColumnName("Nombre");
+            Property(t => t.Clave).HasColumnName("Clave");
         }
     }
 }

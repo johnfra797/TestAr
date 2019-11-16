@@ -1,0 +1,109 @@
+﻿@model Int32
+
+    @{
+        ViewBag.Title = "Delete";
+    }
+
+    <h2>Delete</h2>
+
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>Usuario</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                IdUsuario
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.IdUsuario)
+            </dd>
+
+            <dt>
+                Nombre
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Nombre)
+            </dd>
+
+            <dt>
+                Clave
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Clave)
+            </dd>
+
+            <dt>
+                Direccion
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Direccion)
+            </dd>
+
+            <dt>
+                Telefono
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Telefono)
+            </dd>
+
+            <dt>
+                Email
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+
+            <dt>
+                CodRole
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.CodRole)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" id="delete" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
+    @section scripts
+{
+        <script>
+            $(document).ready(function () {
+                let api_url = 'http://localhost:62040/api/Usuario';
+                var id = <%: Model%>;
+                $("#delete").click(function () {
+                    $.ajax({
+                        url: api_url,
+                        type: 'DELETE',
+                        success: function (result) {
+
+                        }
+                    });
+                });
+
+
+                $.get(api_url/id, function (data) {
+                    var tmpData = JSON.parse(data);
+
+                }).done(function (dt) {
+                    console.log(dt);
+                });
+            });
+
+
+        </script>
+    }

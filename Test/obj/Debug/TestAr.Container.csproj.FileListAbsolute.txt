@@ -23,3 +23,28 @@ C:\Users\jhon.castillo\Downloads\TestAr\Test\obj\Debug\TestAr.Container.csproj.C
 C:\Users\jhon.castillo\Downloads\TestAr\Test\obj\Debug\TestAr.Container.csproj.CopyComplete
 C:\Users\jhon.castillo\Downloads\TestAr\Test\obj\Debug\Test.dll
 C:\Users\jhon.castillo\Downloads\TestAr\Test\obj\Debug\Test.pdb
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\bin\Debug\Test.dll.config
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\bin\Debug\Test.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\bin\Debug\Test.pdb
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\bin\Debug\EntityFramework.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\bin\Debug\TestAr.Aplicacion.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\bin\Debug\TestAr.Datos.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\bin\Debug\Unity.Abstractions.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\bin\Debug\Unity.Container.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\bin\Debug\TestAr.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\bin\Debug\TestAr.Aplicacion.pdb
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\bin\Debug\TestAr.Datos.pdb
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\bin\Debug\TestAr.Datos.dll.config
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\bin\Debug\EntityFramework.xml
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\bin\Debug\Unity.Abstractions.pdb
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\bin\Debug\Unity.Container.pdb
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\bin\Debug\TestAr.pdb
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\obj\Debug\TestAr.Container.csprojAssemblyReference.cache
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\obj\Debug\TestAr.Container.csproj.CoreCompileInputs.cache
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\obj\Debug\TestAr.Container.csproj.CopyComplete
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\obj\Debug\Test.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\Test\obj\Debug\Test.pdb

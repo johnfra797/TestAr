@@ -70,7 +70,7 @@ namespace TestAr.Datos.Repositorios.Implementaciones
 
         private static DbConnection ResolveProvider()
         {
-            return new SqlConnection("");
+            return new SqlConnection("Server=DESKTOP-TS7UAAQ\\SQLEXPRESS;Database=ArandaTest;Trusted_Connection=True;");
            
         }
     }

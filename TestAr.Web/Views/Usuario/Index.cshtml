@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Clave
+            </th>
+            <th>
+                Direccion
+            </th>
+            <th>
+                Telefono
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Role
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="cuerpo"></tbody>
+</table>
+
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            let api_url = 'http://localhost:62040/api/Usuario';
+
+            $.get(api_url, function (data) {
+                var tmpData = JSON.parse(data);
+                var formattedJson = JSON.stringify(tmpData, null, '\t');
+                let row = "";
+                $.each(tmpData, function (index, item) {
+                    var id = item.IdUsuario;
+                    row += "<tr><td>" + item.Nombre + "</td><td>" + item.Clave + "</td><td>" + item.Direccion + "</td><td>" + item.Telefono + "</td><td>" + item.Email + "</td><td>" + item.CodRole + "</td> <td>@Html.ActionLink("Edit", "Edit", new {  id= item.IdUsuario }) | @Html.ActionLink("Details", "Details", new { id = item.IdUsuario }) |@Html.ActionLink("Delete", "Delete", new { id = item.IdUsuario })</td></tr>";
+                });
+                $('#cuerpo').html(row);
+            }).done(function (dt) {
+                console.log(dt);
+            });
+        });
+
+
+    </script>
+}

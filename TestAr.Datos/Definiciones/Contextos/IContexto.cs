@@ -11,6 +11,9 @@ namespace TestAr.Datos.Definiciones.Contextos
     public interface IContexto : IUnidadTrabajo
     {
         IDbSet<Usuario> Usuario { get; set; }
+        IDbSet<Permiso> Permiso { get; set; }
+        IDbSet<Role> Role { get; set; }
+        IDbSet<RolePermiso> RolePermiso { get; set; }
 
     }
 }

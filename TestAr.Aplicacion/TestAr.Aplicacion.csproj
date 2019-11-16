@@ -41,7 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Definiciones\IServicioAplicacionPermiso.cs" />
+    <Compile Include="Definiciones\IServicioAplicacionRole.cs" />
+    <Compile Include="Definiciones\IServicioAplicacionRolePermiso.cs" />
     <Compile Include="Definiciones\IServicioAplicacionUsuario.cs" />
+    <Compile Include="Implementaciones\ServicioAplicacionPermiso.cs" />
+    <Compile Include="Implementaciones\ServicioAplicacionRole.cs" />
+    <Compile Include="Implementaciones\ServicioAplicacionRolePermiso.cs" />
     <Compile Include="Implementaciones\ServicioAplicacionUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -50,6 +56,10 @@
     <ProjectReference Include="..\TestAr.Datos\TestAr.Datos.csproj">
       <Project>{481790BF-FB05-4BE3-A254-F94ED6B265D3}</Project>
       <Name>TestAr.Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestAr\TestAr.Dominio.csproj">
+      <Project>{7c5d2e9d-460d-40c1-9519-bbf02ac22716}</Project>
+      <Name>TestAr.Dominio</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

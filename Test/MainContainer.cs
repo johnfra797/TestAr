@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TestAr.Aplicacion.Definiciones;
+﻿using TestAr.Aplicacion.Definiciones;
 using TestAr.Aplicacion.Implementaciones;
 using TestAr.Datos.Definiciones.Contextos;
 using TestAr.Datos.Definiciones.Repositorios;
@@ -45,16 +40,20 @@ namespace Test
                 #region Servicios
 
                 _theMainContainer.RegisterType<IServicioAplicacionUsuario, ServicioAplicacionUsuario>();
-
+                _theMainContainer.RegisterType<IServicioAplicacionRole, ServicioAplicacionRole>();
+                _theMainContainer.RegisterType<IServicioAplicacionPermiso, ServicioAplicacionPermiso>();
+                _theMainContainer.RegisterType<IServicioAplicacionRolePermiso, ServicioAplicacionRolePermiso>();
                 #endregion
-                
+
 
                 #region Repositorios
 
                 _theMainContainer.RegisterType<IUsuarioRepositorio, UsuarioRepositorio>();
-               
+                _theMainContainer.RegisterType<IRoleRepositorio, RoleRepositorio>();
+                _theMainContainer.RegisterType<IPermisoRepositorio, PermisoRepositorio>();
+                _theMainContainer.RegisterType<IRolePermisoRepositorio, RolePermisoRepositorio>();
                 #endregion
-                
+
                 return _theMainContainer;
             }
         }
