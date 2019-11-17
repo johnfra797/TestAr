@@ -5,7 +5,7 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Crear nuevo", "Create")
 </p>
 <table class="table">
     <thead>
@@ -39,20 +39,25 @@
 {
     <script>
         $(document).ready(function () {
-            let api_url = 'http://localhost:62040/api/Usuario';
+            let api_url = 'http://localhost:62040/';
 
-            $.get(api_url, function (data) {
+            $.get(`${api_url}api/Usuario`, function (data) {
                 var tmpData = JSON.parse(data);
-                var formattedJson = JSON.stringify(tmpData, null, '\t');
                 let row = "";
                 $.each(tmpData, function (index, item) {
-                    var id = item.IdUsuario;
-                    row += "<tr><td>" + item.Nombre + "</td><td>" + item.Clave + "</td><td>" + item.Direccion + "</td><td>" + item.Telefono + "</td><td>" + item.Email + "</td><td>" + item.CodRole + "</td> <td>@Html.ActionLink("Edit", "Edit", new {  id= item.IdUsuario }) | @Html.ActionLink("Details", "Details", new { id = item.IdUsuario }) |@Html.ActionLink("Delete", "Delete", new { id = item.IdUsuario })</td></tr>";
+                    var urlEdit = '@Html.ActionLink("Editar", "Edit", new { id = "param-id" })';
+                    urlEdit = urlEdit.replace("param-id", item.IdUsuario);
+
+                    var urlDetails = '@Html.ActionLink("Detalle", "Details", new { id = "param-id" })';
+                    urlDetails = urlDetails.replace("param-id", item.IdUsuario);
+
+                    var urlDelete= '@Html.ActionLink("Eliminar", "Delete", new { id = "param-id" })';
+                    urlDelete = urlDelete.replace("param-id", item.IdUsuario);
+
+                    row += "<tr><td>" + item.Nombre + "</td><td>" + item.Clave + "</td><td>" + item.Direccion + "</td><td>" + item.Telefono + "</td><td>" + item.Email + "</td><td>" + item.RoleAsociado.Nombre + "</td> <td> "+urlEdit+" | "+ urlDetails+" | "+urlDelete+"</td></tr>";
                 });
                 $('#cuerpo').html(row);
-            }).done(function (dt) {
-                console.log(dt);
-            });
+            })
         });
 
 

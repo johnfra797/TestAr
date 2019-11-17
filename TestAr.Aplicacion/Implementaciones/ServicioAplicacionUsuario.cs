@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TestAr.Aplicacion.Definiciones;
 using TestAr.Datos.Definiciones.Repositorios;
+using TestAr.DTO;
 
 namespace TestAr.Aplicacion.Implementaciones
 {
@@ -11,9 +12,11 @@ namespace TestAr.Aplicacion.Implementaciones
     {
 
         private readonly IUsuarioRepositorio _usuarioRepositorio;
-        public ServicioAplicacionUsuario(IUsuarioRepositorio usuarioRepositorio)
+        private readonly IRoleRepositorio _roleRepositorio;
+        public ServicioAplicacionUsuario(IUsuarioRepositorio usuarioRepositorio, IRoleRepositorio roleRepositorio)
         {
             _usuarioRepositorio = usuarioRepositorio;
+            _roleRepositorio = roleRepositorio;
         }
 
         public bool Eliminar(int idUsuario)
@@ -21,7 +24,7 @@ namespace TestAr.Aplicacion.Implementaciones
             bool eliminado;
             try
             {
-                _usuarioRepositorio.Eliminar(Obtener(idUsuario));
+                _usuarioRepositorio.Eliminar(ObtenerUsuario(idUsuario));
 
                 _usuarioRepositorio.UnidadTrabajo.Commit();
 
@@ -58,14 +61,49 @@ namespace TestAr.Aplicacion.Implementaciones
             return Guardado;
         }
 
-        public Usuario Obtener(int idUsuario)
+        private Usuario ObtenerUsuario(int idUsuario)
         {
             return _usuarioRepositorio.ObtenerPor(x => x.IdUsuario == idUsuario).FirstOrDefault();
         }
 
-        public List<Usuario> ObtenerTodos()
+        public UsuarioDTO Obtener(int idUsuario)
         {
-            return _usuarioRepositorio.ObtenerTodo().ToList();
+            var usuario = _usuarioRepositorio.ObtenerPor(x => x.IdUsuario == idUsuario)
+                .Select(x => new UsuarioDTO
+                {
+                    IdUsuario = x.IdUsuario,
+                    Nombre = x.Nombre,
+                    Clave = x.Clave,
+                    CodRole = x.CodRole,
+                    Direccion = x.Direccion,
+                    Email = x.Email,
+                    Telefono = x.Telefono
+                }).FirstOrDefault();
+
+            usuario.RoleAsociado = ObtenerRole(usuario.CodRole);
+            return usuario;
+        }
+
+        public List<UsuarioDTO> ObtenerTodos()
+        {
+            var ListaUsuarios = _usuarioRepositorio.ObtenerTodo()
+                .Select(x => new UsuarioDTO
+                {
+                    IdUsuario = x.IdUsuario,
+                    Nombre = x.Nombre,
+                    Clave = x.Clave,
+                    CodRole = x.CodRole,
+                    Direccion = x.Direccion,
+                    Email = x.Email,
+                    Telefono = x.Telefono
+                }).ToList();
+            ListaUsuarios.ForEach(x => x.RoleAsociado = ObtenerRole(x.CodRole));
+
+            return ListaUsuarios;
+        }
+        private Role ObtenerRole(int idRole)
+        {
+            return _roleRepositorio.ObtenerPor(x => x.IdRole == idRole).FirstOrDefault();
         }
     }
 }

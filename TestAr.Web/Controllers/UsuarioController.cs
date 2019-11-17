@@ -17,7 +17,7 @@ namespace TestAr.Web.Controllers
         // GET: Usuario/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            return View(id);
         }
 
         // GET: Usuario/Create
@@ -45,7 +45,7 @@ namespace TestAr.Web.Controllers
         // GET: Usuario/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            return View(id);
         }
 
         // POST: Usuario/Edit/5
@@ -67,7 +67,7 @@ namespace TestAr.Web.Controllers
         // GET: Usuario/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            return View(id);
         }
 
         // POST: Usuario/Delete/5

@@ -1,10 +1,12 @@
 ﻿using Newtonsoft.Json;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using TestAr.Aplicacion.Definiciones;
 using TestAr.IoC;
 
 namespace TestAr.API.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class PermisoController : ApiController
     {
         IServicioAplicacionPermiso servicioAplicacionPermiso = FactoryContainer.Resolver<IServicioAplicacionPermiso>();
@@ -32,6 +34,7 @@ namespace TestAr.API.Controllers
         
         public string Put(int id, [FromBody]Permiso permiso)
         {
+            permiso.IdPermiso = id;
             var resultado = servicioAplicacionPermiso.Guardar(permiso);
             string output = JsonConvert.SerializeObject(resultado);
             return output;

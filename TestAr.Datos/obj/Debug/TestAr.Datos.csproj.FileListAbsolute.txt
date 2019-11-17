@@ -26,3 +26,11 @@ C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\obj\Debug\TestAr.Datos.
 C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\obj\Debug\TestAr.Datos.csproj.CopyComplete
 C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\obj\Debug\TestAr.Datos.dll
 C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\obj\Debug\TestAr.Datos.pdb
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\bin\Debug\System.Security.AccessControl.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\bin\Debug\System.Security.Permissions.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\bin\Debug\System.Security.AccessControl.xml
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\bin\Debug\System.Security.Permissions.xml
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Datos\bin\Debug\System.Security.Principal.Windows.xml

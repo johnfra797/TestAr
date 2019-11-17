@@ -17,7 +17,7 @@ namespace TestAr.Web.Controllers
         // GET: Permiso/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            return View(id);
         }
 
         // GET: Permiso/Create
@@ -45,7 +45,7 @@ namespace TestAr.Web.Controllers
         // GET: Permiso/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            return View(id);
         }
 
         // POST: Permiso/Edit/5
@@ -67,7 +67,7 @@ namespace TestAr.Web.Controllers
         // GET: Permiso/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            return View(id);
         }
 
         // POST: Permiso/Delete/5

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TestAr.DTO;
 
 namespace TestAr.Aplicacion.Definiciones
 {
@@ -10,7 +11,7 @@ namespace TestAr.Aplicacion.Definiciones
     {
         bool Guardar(Usuario usuario);
         bool Eliminar(int idUsuario);
-        Usuario Obtener(int idUsuario);
-        List<Usuario> ObtenerTodos();
+        UsuarioDTO Obtener(int idUsuario);
+        List<UsuarioDTO> ObtenerTodos();
     }
 }

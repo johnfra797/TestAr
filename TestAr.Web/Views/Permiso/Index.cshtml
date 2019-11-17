@@ -1,5 +1,4 @@
-﻿@model IEnumerable<TestAr.Permiso>
-
+﻿
 @{
     ViewBag.Title = "Permiso";
 }
@@ -7,33 +6,46 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Crear", "Create")
+    @Html.ActionLink("Crear nuevo", "Create")
 </p>
 <table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.IdPermiso)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Nombre)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.IdPermiso)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Nombre)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-        </td>
-    </tr>
-}
-
+    <thead>
+        <tr>
+            <th>
+                Nombre
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="cuerpo"></tbody>
 </table>
+
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            let api_url = 'http://localhost:62040/';
+
+            $.get(`${api_url}api/Permiso`, function (data) {
+                var tmpData = JSON.parse(data);
+                let row = "";
+                $.each(tmpData, function (index, item) {
+                    var urlEdit = '@Html.ActionLink("Editar", "Edit", new { id = "param-id" })';
+                    urlEdit = urlEdit.replace("param-id", item.IdPermiso);
+
+                    var urlDetails = '@Html.ActionLink("Detalle", "Details", new { id = "param-id" })';
+                    urlDetails = urlDetails.replace("param-id", item.IdPermiso);
+
+                    var urlDelete= '@Html.ActionLink("Eliminar", "Delete", new { id = "param-id" })';
+                    urlDelete = urlDelete.replace("param-id", item.IdPermiso);
+
+                    row += "<tr><td>" + item.Nombre + "</td><td> "+urlEdit+" | "+ urlDetails+" | "+urlDelete+"</td></tr>";
+                });
+                $('#cuerpo').html(row);
+            })
+        });
+
+
+    </script>
+}

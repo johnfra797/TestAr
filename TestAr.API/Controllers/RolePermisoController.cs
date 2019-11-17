@@ -5,11 +5,13 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using TestAr.Aplicacion.Definiciones;
 using TestAr.IoC;
 
 namespace TestAr.API.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class RolePermisoController : ApiController
     {
         IServicioAplicacionRolePermiso servicioAplicacionRolePermiso = FactoryContainer.Resolver<IServicioAplicacionRolePermiso>();

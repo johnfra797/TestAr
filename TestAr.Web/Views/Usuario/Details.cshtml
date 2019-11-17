@@ -1,74 +1,96 @@
-﻿@model TestAr.Usuario
+﻿@model Int32
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Detalle Usuario";
 }
 
-<h2>Details</h2>
+<h2>Detalle</h2>
 
 <div>
     <h4>Usuario</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.IdUsuario)
+            IdUsuario
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.IdUsuario)
+            <label id="IdUsuario"></label>
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Nombre)
+            Nombre
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Nombre)
+            <label id="Nombre"></label>
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Clave)
+            Clave
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Clave)
+            <label id="Clave"></label>
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Direccion)
+            Direccion
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Direccion)
+            <label id="Direccion"></label>
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Telefono)
+            Telefono
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Telefono)
+            <label id="Telefono"></label>
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Email)
+            Email
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Email)
+            <label id="Email"></label>
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.CodRole)
+            Role
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.CodRole)
+            <label id="CodRole"></label>
         </dd>
 
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Editar", "Edit", new { id = Model }) |
+    @Html.ActionLink("Volver", "Index")
 </p>
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            let api_url = 'http://localhost:62040/';
+            var id = @Html.Raw(Json.Encode(Model));
+            $.get(`${api_url}api/Usuario/${id}`, function (data) {
+                var tmpData = JSON.parse(data);
+                $("#IdUsuario").text(tmpData.IdUsuario);
+                $("#Nombre").text(tmpData.Nombre);
+                $("#Clave").text(tmpData.Clave);
+                $("#Direccion").text(tmpData.Direccion);
+                $("#Telefono").text(tmpData.Telefono);
+                $("#Email").text(tmpData.Email);
+                $("#CodRole").text(tmpData.RoleAsociado.Nombre);
+
+            })
+        });
+
+
+    </script>
+}

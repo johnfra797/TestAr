@@ -214,3 +214,9 @@ C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Web\bin\TestAr.Datos.pdb
 C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Web\bin\TestAr.Datos.dll.config
 C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Web\bin\TestAr.Aplicacion.pdb
 C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Web\bin\EntityFramework.xml
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Web\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Web\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
