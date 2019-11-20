@@ -21,13 +21,14 @@ namespace TestAr.Datos.Implementaciones.Contextos
         public IDbSet<Permiso> Permiso { get; set; }
         public IDbSet<Role> Role { get; set; }
         public IDbSet<RolePermiso> RolePermiso { get; set; }
+        public IDbSet<ComentarioObj> ComentarioObj { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new UsuarioMapping());
             modelBuilder.Configurations.Add(new PermisoMapping());
             modelBuilder.Configurations.Add(new RoleMapping());
             modelBuilder.Configurations.Add(new RolePermisoMapping());
-
+            modelBuilder.Configurations.Add(new ComentarioMapping());
         }
     }
 }

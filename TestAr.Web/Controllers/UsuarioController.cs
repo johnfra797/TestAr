@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using TestAr.Web.Models;
 
 namespace TestAr.Web.Controllers
 {
@@ -84,6 +85,24 @@ namespace TestAr.Web.Controllers
             {
                 return View();
             }
+        }
+        public ActionResult Register()
+        {
+            return View();
+        }
+        public ActionResult Login()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Register(FormCollection collection)
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Login(LoginViewModel login)
+        {
+            return View();
         }
     }
 }

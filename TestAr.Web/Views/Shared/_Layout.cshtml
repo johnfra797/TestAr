@@ -20,12 +20,17 @@
                 @Html.ActionLink("Aranda", "Index", "Usuario", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Usuarios", "Index", "Usuario")</li>
-                    <li>@Html.ActionLink("Roles", "Index", "Role")</li>
-                    <li>@Html.ActionLink("Permisos", "Index", "Permiso")</li>
-                </ul>
-            </div>
+
+                @using Microsoft.AspNet.Identity
+                @if (Request.IsAuthenticated)
+                {<ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Usuarios", "Index", "Usuario")</li>
+                        <li>@Html.ActionLink("Roles", "Index", "Role")</li>
+                        <li>@Html.ActionLink("Permisos", "Index", "Permiso")</li>
+                    </ul>
+                }
+                    @Html.Partial("_LoginPartial")
+                </div>
         </div>
     </div>
     <div class="container body-content">

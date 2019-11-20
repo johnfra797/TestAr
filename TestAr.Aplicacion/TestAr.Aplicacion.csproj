@@ -41,10 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Definiciones\IServicioAplicacionComentario.cs" />
     <Compile Include="Definiciones\IServicioAplicacionPermiso.cs" />
     <Compile Include="Definiciones\IServicioAplicacionRole.cs" />
     <Compile Include="Definiciones\IServicioAplicacionRolePermiso.cs" />
     <Compile Include="Definiciones\IServicioAplicacionUsuario.cs" />
+    <Compile Include="Implementaciones\ServicioAplicacionComentario.cs" />
     <Compile Include="Implementaciones\ServicioAplicacionPermiso.cs" />
     <Compile Include="Implementaciones\ServicioAplicacionRole.cs" />
     <Compile Include="Implementaciones\ServicioAplicacionRolePermiso.cs" />

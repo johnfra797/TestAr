@@ -43,6 +43,7 @@ namespace Test
                 _theMainContainer.RegisterType<IServicioAplicacionRole, ServicioAplicacionRole>();
                 _theMainContainer.RegisterType<IServicioAplicacionPermiso, ServicioAplicacionPermiso>();
                 _theMainContainer.RegisterType<IServicioAplicacionRolePermiso, ServicioAplicacionRolePermiso>();
+                _theMainContainer.RegisterType<IServicioAplicacionComentario, ServicioAplicacionComentario>();
                 #endregion
 
 
@@ -52,6 +53,7 @@ namespace Test
                 _theMainContainer.RegisterType<IRoleRepositorio, RoleRepositorio>();
                 _theMainContainer.RegisterType<IPermisoRepositorio, PermisoRepositorio>();
                 _theMainContainer.RegisterType<IRolePermisoRepositorio, RolePermisoRepositorio>();
+                _theMainContainer.RegisterType<IComentarioRepositorio, ComentarioRepositorio>();
                 #endregion
 
                 return _theMainContainer;

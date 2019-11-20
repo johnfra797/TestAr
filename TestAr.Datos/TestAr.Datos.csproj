@@ -72,15 +72,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Definiciones\Contextos\IContexto.cs" />
+    <Compile Include="Definiciones\Repositorios\IComentarioRepositorio.cs" />
     <Compile Include="Definiciones\Repositorios\IPermisoRepositorio.cs" />
     <Compile Include="Definiciones\Repositorios\IRolePermisoRepositorio.cs" />
     <Compile Include="Definiciones\Repositorios\IRoleRepositorio.cs" />
     <Compile Include="Definiciones\Repositorios\IUsuarioRepositorio.cs" />
     <Compile Include="Implementaciones\Contextos\Contexto.cs" />
+    <Compile Include="Implementaciones\Mapeos\ComentarioMapping.cs" />
     <Compile Include="Implementaciones\Mapeos\PermisoMapping.cs" />
     <Compile Include="Implementaciones\Mapeos\RoleMapping.cs" />
     <Compile Include="Implementaciones\Mapeos\RolePermisoMapping.cs" />
     <Compile Include="Implementaciones\Mapeos\UsuarioMapping.cs" />
+    <Compile Include="Implementaciones\Repositorios\ComentarioRepositorio.cs" />
     <Compile Include="Implementaciones\Repositorios\PermisoRepositorio.cs" />
     <Compile Include="Implementaciones\Repositorios\RolePermisoRepositorio.cs" />
     <Compile Include="Implementaciones\Repositorios\RoleRepositorio.cs" />

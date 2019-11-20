@@ -14,6 +14,6 @@ namespace TestAr.Datos.Definiciones.Contextos
         IDbSet<Permiso> Permiso { get; set; }
         IDbSet<Role> Role { get; set; }
         IDbSet<RolePermiso> RolePermiso { get; set; }
-
+        IDbSet<ComentarioObj> ComentarioObj { get; set; }
     }
 }
