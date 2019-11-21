@@ -46,7 +46,7 @@
                     <text>[&nbsp;&nbsp;@Html.ActionLink("Change", "AddPhoneNumber")&nbsp;&nbsp;]</text>
                     using (Html.BeginForm("RemovePhoneNumber", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
                     {
-                        @Html.AntiForgeryToken()
+                        
                         <text>[<input type="submit" value="Quitar" class="btn-link" />]</text>
                     }
                 }
@@ -66,7 +66,7 @@
                 {
                     using (Html.BeginForm("DisableTwoFactorAuthentication", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
                     {
-                        @Html.AntiForgeryToken()
+                        
                         <text>Habilitado
                         <input type="submit" value="Deshabilitar" class="btn btn-link" />
                         </text>
@@ -76,7 +76,7 @@
                 {
                     using (Html.BeginForm("EnableTwoFactorAuthentication", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
                     {
-                        @Html.AntiForgeryToken()
+                        
                         <text>Deshabilitado
                         <input type="submit" value="Habilitar" class="btn btn-link" />
                         </text>
