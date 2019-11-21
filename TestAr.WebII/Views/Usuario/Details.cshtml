@@ -1,0 +1,96 @@
+﻿@model Int32
+
+@{
+    ViewBag.Title = "Detalle Usuario";
+}
+
+<h2>Detalle</h2>
+
+<div>
+    <h4>Usuario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            IdUsuario
+        </dt>
+
+        <dd>
+            <label id="IdUsuario"></label>
+        </dd>
+
+        <dt>
+            Nombre
+        </dt>
+
+        <dd>
+            <label id="Nombre"></label>
+        </dd>
+
+        <dt>
+            Clave
+        </dt>
+
+        <dd>
+            <label id="Clave"></label>
+        </dd>
+
+        <dt>
+            Direccion
+        </dt>
+
+        <dd>
+            <label id="Direccion"></label>
+        </dd>
+
+        <dt>
+            Telefono
+        </dt>
+
+        <dd>
+            <label id="Telefono"></label>
+        </dd>
+
+        <dt>
+            Email
+        </dt>
+
+        <dd>
+            <label id="Email"></label>
+        </dd>
+
+        <dt>
+            Role
+        </dt>
+
+        <dd>
+            <label id="CodRole"></label>
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model }) |
+    @Html.ActionLink("Volver", "Index")
+</p>
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            let api_url = 'http://localhost:62040/';
+            var id = @Html.Raw(Json.Encode(Model));
+            $.get(`${api_url}api/Usuario/${id}`, function (data) {
+                var tmpData = JSON.parse(data);
+                $("#IdUsuario").text(tmpData.IdUsuario);
+                $("#Nombre").text(tmpData.Nombre);
+                $("#Clave").text(tmpData.Clave);
+                $("#Direccion").text(tmpData.Direccion);
+                $("#Telefono").text(tmpData.Telefono);
+                $("#Email").text(tmpData.Email);
+                $("#CodRole").text(tmpData.RoleAsociado.Nombre);
+
+            })
+        });
+
+
+    </script>
+}

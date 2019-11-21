@@ -1,0 +1,65 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Crear nuevo", "Create")
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Clave
+            </th>
+            <th>
+                Direccion
+            </th>
+            <th>
+                Telefono
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Role
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="cuerpo"></tbody>
+</table>
+
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            let api_url = 'http://localhost:62040/';
+
+            $.get(`${api_url}api/Usuario`, function (data) {
+                var tmpData = JSON.parse(data);
+                let row = "";
+                $.each(tmpData, function (index, item) {
+                    var urlEdit = '@Html.ActionLink("Editar", "Edit", new { id = "param-id" })';
+                    urlEdit = urlEdit.replace("param-id", item.IdUsuario);
+
+                    var urlDetails = '@Html.ActionLink("Detalle", "Details", new { id = "param-id" })';
+                    urlDetails = urlDetails.replace("param-id", item.IdUsuario);
+
+                    var urlDelete= '@Html.ActionLink("Eliminar", "Delete", new { id = "param-id" })';
+                    urlDelete = urlDelete.replace("param-id", item.IdUsuario);
+
+                    row += "<tr><td>" + item.Nombre + "</td><td>" + item.Clave + "</td><td>" + item.Direccion + "</td><td>" + item.Telefono + "</td><td>" + item.Email + "</td><td>" + item.RoleAsociado.Nombre + "</td> <td> "+urlEdit+" | "+ urlDetails+" | "+urlDelete+"</td></tr>";
+                });
+                $('#cuerpo').html(row);
+            })
+        });
+
+
+    </script>
+}

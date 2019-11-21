@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Script.Serialization;
 using System.Web.Security;
 using TestAr.Aplicacion.Definiciones;
 using TestAr.DTO;
@@ -109,7 +110,6 @@ namespace TestAr.Web.Controllers
                 if (usuarioLogin != null)
                 {
                     CreateTicket(usuarioLogin);
-                    FormsAuthentication.SetAuthCookie(login.Email, false);
                     return View();
                 }
                 else
@@ -117,22 +117,25 @@ namespace TestAr.Web.Controllers
                     return View();
                 }
             }
+            
             return View();
         }
         private void CreateTicket(UsuarioDTO usuario)
         {
-            var ticket = new FormsAuthenticationTicket(
-                 version: 1,
-                 name: usuario.Email,
-                 issueDate: DateTime.Now,
-                 expiration: DateTime.Now.AddSeconds(HttpContext.Session.Timeout),
-                 isPersistent: false,
-                 userData: String.Join("|", usuario.RoleAsociado.Nombre));
+            var userData = new JavaScriptSerializer().Serialize(usuario);
 
-            var encryptedTicket = FormsAuthentication.Encrypt(ticket);
-            var cookie = new HttpCookie(FormsAuthentication.FormsCookieName, encryptedTicket);
+            var authenticationTicket = new FormsAuthenticationTicket(1, usuario.Email, DateTime.Now, DateTime.Now.AddDays(0.5), false, userData);
+            var encryptedTicket = FormsAuthentication.Encrypt(authenticationTicket);
+            FormsAuthentication.SetAuthCookie(usuario.Email, true);
+            var theCookie = new HttpCookie(".ckTestAr", encryptedTicket);
+            Response.Cookies.Add(theCookie);
+        }
 
-            HttpContext.Response.Cookies.Add(cookie);
+        public ActionResult LogOut()
+        {
+            FormsAuthentication.SignOut();
+            Session.Abandon();
+            return RedirectToAction("Index", "Home");
         }
     }
 }

@@ -592,3 +592,5 @@ C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\TestAr.Web\obj\
 C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\TestAr.Web\obj\Debug\TestAr.Web.csproj.CopyComplete
 C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\TestAr.Web\obj\Debug\TestAr.Web.dll
 C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\TestAr.Web\obj\Debug\TestAr.Web.pdb
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Web\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\JHON DAVID CASTILLO\Desktop\TestAr\TestAr.Web\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll

@@ -1,0 +1,109 @@
+﻿@model Int32
+
+@{
+    ViewBag.Title = "Eliminar Usuario";
+}
+
+<h2>Eliminar Usuario</h2>
+<div>
+    <h4>Usuario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            IdUsuario
+        </dt>
+
+        <dd>
+            <label id="IdUsuario"></label>
+        </dd>
+
+        <dt>
+            Nombre
+        </dt>
+
+        <dd>
+            <label id="Nombre"></label>
+        </dd>
+
+        <dt>
+            Clave
+        </dt>
+
+        <dd>
+            <label id="Clave"></label>
+        </dd>
+
+        <dt>
+            Direccion
+        </dt>
+
+        <dd>
+            <label id="Direccion"></label>
+        </dd>
+
+        <dt>
+            Telefono
+        </dt>
+
+        <dd>
+            <label id="Telefono"></label>
+        </dd>
+
+        <dt>
+            Email
+        </dt>
+
+        <dd>
+            <label id="Email"></label>
+        </dd>
+
+        <dt>
+            CodRole
+        </dt>
+
+        <dd>
+            <label id="CodRole"></label>
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" id="delete" /> |
+            @Html.ActionLink("Volver", "Index")
+        </div>
+    }
+</div>
+@section scripts
+{
+    <script>
+            $(document).ready(function () {
+                let api_url = 'http://localhost:62040/';
+                var id = @Html.Raw(Json.Encode(Model));
+                $("#delete").click(function () {
+                    $.ajax({
+                        url: `${api_url}api/Usuario/${id}`,
+                        type: 'DELETE'
+                    });
+                });
+
+
+            $.get(`${api_url}api/Usuario/${id}`, function (data) {
+                    var tmpData = JSON.parse(data);
+                    $("#IdUsuario").text(tmpData.IdUsuario);
+                    $("#Nombre").text(tmpData.Nombre);
+                    $("#Clave").text(tmpData.Clave);
+                    $("#Direccion").text(tmpData.Direccion);
+                    $("#Telefono").text(tmpData.Telefono);
+                    $("#Email").text(tmpData.Email);
+                    $("#CodRole").text(tmpData.CodRole);
+
+            })
+            });
+
+
+    </script>
+}

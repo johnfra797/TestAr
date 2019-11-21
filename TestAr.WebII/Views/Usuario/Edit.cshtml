@@ -1,0 +1,132 @@
+﻿@model Int32
+
+@{
+    ViewBag.Title = "Editar Usuario";
+}
+
+<h2>Editar</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Usuario</h4>
+        <hr />
+        <div class="form-group">
+            <div class="col-md-10">
+                <label>IdUsuario</label>
+                <label id="IdUsuario"></label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <label>Nombre</label>
+                <input type="text" id="Nombre">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <label>Clave</label>
+                <input type="text" id="Clave">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <label>Direccion</label>
+                <input type="text" id="Direccion">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <label>Telefono</label>
+                <input type="text" id="Telefono">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <label>Email</label>
+                <input type="text" id="Email">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                <label>Role</label>
+                <select id="selectRole"></select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Guardar" class="btn btn-default" id="guardar" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Volver", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script>
+            $(document).ready(function () {
+                let api_url = 'http://localhost:62040/';
+                var id = @Html.Raw(Json.Encode(Model));
+              
+                $("#guardar").click(function () {
+
+                    var json =
+                    {
+                        IdUsuario: $("#IdUsuario").val(),
+                        Nombre: $("#Nombre").val(),
+                        Clave: $("#Clave").val(),
+                        Direccion: $("#Direccion").val(),
+                        Telefono: $("#Telefono").val(),
+                        Email: $("#Email").val(),
+                        CodRole: $("#selectRole").val()
+                    };
+                    
+                    $.ajax({
+                        url: `${api_url}api/Usuario/${id}`,
+                        type: 'PUT',
+                        data: json
+                    });
+                });
+
+
+                $.get(`${api_url}api/Role`, function (data) {
+                    var tmpData = JSON.parse(data);
+                    let row = "";
+                    $.each(tmpData, function (index, item) {
+                        row += "<option value=" + item.IdRole + ">" + item.Nombre + "</option>";
+                    });
+                    $('#selectRole').html(row);
+                })
+
+                $.get(`${api_url}api/Usuario/${id}`, function (data) {
+                    var tmpData = JSON.parse(data);
+                    $("#IdUsuario").text(tmpData.IdUsuario);
+                    $("#Nombre").val(tmpData.Nombre);
+                    $("#Clave").val(tmpData.Clave);
+                    $("#Direccion").val(tmpData.Direccion);
+                    $("#Telefono").val(tmpData.Telefono);
+                    $("#Email").val(tmpData.Email);
+                    $('#selectRole').val(tmpData.CodRole);
+
+                })
+                
+            });
+
+
+    </script>
+}
