@@ -13,11 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAr.Aplicacion", "TestAr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAr.API", "TestAr.API\TestAr.API.csproj", "{76210C0F-9348-4BE9-A5B8-2D3FE601E289}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAr.Web", "TestAr.Web\TestAr.Web.csproj", "{4FA4A652-E5A9-4CE2-9D8E-50C247375545}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAr.IoC", "TestAr.IoC\TestAr.IoC.csproj", "{099B0A2C-8F8D-4A5A-A170-C204C8D0C156}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAr.WebII", "TestAr.WebII\TestAr.WebII.csproj", "{2C1F735F-3F7A-4974-96C4-004472BC8B59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAr.Web", "TestAr.WebII\TestAr.Web.csproj", "{2C1F735F-3F7A-4974-96C4-004472BC8B59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,10 +43,6 @@ Global
 		{76210C0F-9348-4BE9-A5B8-2D3FE601E289}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76210C0F-9348-4BE9-A5B8-2D3FE601E289}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76210C0F-9348-4BE9-A5B8-2D3FE601E289}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4FA4A652-E5A9-4CE2-9D8E-50C247375545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4FA4A652-E5A9-4CE2-9D8E-50C247375545}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4FA4A652-E5A9-4CE2-9D8E-50C247375545}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4FA4A652-E5A9-4CE2-9D8E-50C247375545}.Release|Any CPU.Build.0 = Release|Any CPU
 		{099B0A2C-8F8D-4A5A-A170-C204C8D0C156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{099B0A2C-8F8D-4A5A-A170-C204C8D0C156}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{099B0A2C-8F8D-4A5A-A170-C204C8D0C156}.Release|Any CPU.ActiveCfg = Release|Any CPU
