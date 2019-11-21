@@ -22,3 +22,9 @@ C:\Users\JHON DAVID CASTILLO\Downloads\TestAr-master\TestAr-master\TestAr-master
 C:\Users\JHON DAVID CASTILLO\Downloads\TestAr-master\TestAr-master\TestAr-master\TestAr\obj\Debug\TestAr.Dominio.csproj.CoreCompileInputs.cache
 C:\Users\JHON DAVID CASTILLO\Downloads\TestAr-master\TestAr-master\TestAr-master\TestAr\obj\Debug\TestAr.dll
 C:\Users\JHON DAVID CASTILLO\Downloads\TestAr-master\TestAr-master\TestAr-master\TestAr\obj\Debug\TestAr.pdb
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\TestAr\bin\Debug\TestAr.dll
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\TestAr\bin\Debug\TestAr.pdb
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\TestAr\obj\Debug\TestAr.Dominio.csprojAssemblyReference.cache
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\TestAr\obj\Debug\TestAr.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\TestAr\obj\Debug\TestAr.dll
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\TestAr\obj\Debug\TestAr.pdb

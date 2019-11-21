@@ -237,10 +237,14 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Usuario\Login.cshtml" />
     <Content Include="Views\Usuario\Register.cshtml" />
+    <Content Include="Views\Comentario\Index.cshtml" />
+    <Content Include="Views\Comentario\Edit.cshtml" />
+    <Content Include="Views\Comentario\Delete.cshtml" />
+    <Content Include="Views\Comentario\Create.cshtml" />
+    <Content Include="Views\Comentario\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Comentario\" />
     <Folder Include="Views\Manage\" />
   </ItemGroup>
   <ItemGroup>
@@ -257,6 +261,10 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TestAr.Aplicacion\TestAr.Aplicacion.csproj">
+      <Project>{AAD4281C-1050-4D3C-841E-EAEA99C8CEAB}</Project>
+      <Name>TestAr.Aplicacion</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TestAr.IoC\TestAr.IoC.csproj">
       <Project>{099B0A2C-8F8D-4A5A-A170-C204C8D0C156}</Project>
       <Name>TestAr.IoC</Name>

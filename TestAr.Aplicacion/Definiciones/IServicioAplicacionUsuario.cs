@@ -13,5 +13,6 @@ namespace TestAr.Aplicacion.Definiciones
         bool Eliminar(int idUsuario);
         UsuarioDTO Obtener(int idUsuario);
         List<UsuarioDTO> ObtenerTodos();
+        UsuarioDTO Login(string email,string password);
     }
 }

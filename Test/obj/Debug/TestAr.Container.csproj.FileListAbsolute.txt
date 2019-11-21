@@ -98,3 +98,28 @@ C:\Users\JHON DAVID CASTILLO\Downloads\TestAr-master\TestAr-master\TestAr-master
 C:\Users\JHON DAVID CASTILLO\Downloads\TestAr-master\TestAr-master\TestAr-master\Test\obj\Debug\TestAr.Container.csproj.CopyComplete
 C:\Users\JHON DAVID CASTILLO\Downloads\TestAr-master\TestAr-master\TestAr-master\Test\obj\Debug\Test.dll
 C:\Users\JHON DAVID CASTILLO\Downloads\TestAr-master\TestAr-master\TestAr-master\Test\obj\Debug\Test.pdb
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\bin\Debug\Test.dll.config
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\bin\Debug\Test.dll
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\bin\Debug\Test.pdb
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\bin\Debug\EntityFramework.dll
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\bin\Debug\TestAr.Aplicacion.dll
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\bin\Debug\TestAr.Datos.dll
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\bin\Debug\Unity.Abstractions.dll
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\bin\Debug\Unity.Container.dll
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\bin\Debug\TestAr.dll
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\bin\Debug\TestAr.Aplicacion.pdb
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\bin\Debug\TestAr.Datos.pdb
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\bin\Debug\TestAr.Datos.dll.config
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\bin\Debug\EntityFramework.xml
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\bin\Debug\Unity.Abstractions.pdb
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\bin\Debug\Unity.Container.pdb
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\bin\Debug\TestAr.pdb
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\obj\Debug\TestAr.Container.csprojAssemblyReference.cache
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\obj\Debug\TestAr.Container.csproj.CoreCompileInputs.cache
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\obj\Debug\TestAr.Container.csproj.CopyComplete
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\obj\Debug\Test.dll
+C:\Users\jhon.castillo\Downloads\TestAr-master (1)\TestAr-master\Test\obj\Debug\Test.pdb

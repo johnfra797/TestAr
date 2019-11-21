@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace TestAr.Web.Controllers
 {
+    [Authorize]
     public class PermisoController : Controller
     {
         // GET: Permiso

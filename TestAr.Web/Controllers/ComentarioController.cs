@@ -13,19 +13,19 @@ namespace TestAr.Web.Controllers
         {
             return View();
         }
-
+        [Authorize]
         // GET: Comentario/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            return View(id);
         }
-
+        [Authorize]
         // GET: Comentario/Create
         public ActionResult Create()
         {
             return View();
         }
-
+        [Authorize]
         // POST: Comentario/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
@@ -41,14 +41,12 @@ namespace TestAr.Web.Controllers
                 return View();
             }
         }
-
-        // GET: Comentario/Edit/5
+        [Authorize]
         public ActionResult Edit(int id)
         {
-            return View();
+            return View(id);
         }
-
-        // POST: Comentario/Edit/5
+        [Authorize]
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
         {
@@ -63,14 +61,12 @@ namespace TestAr.Web.Controllers
                 return View();
             }
         }
-
-        // GET: Comentario/Delete/5
+        [Authorize]
         public ActionResult Delete(int id)
         {
-            return View();
+            return View(id);
         }
-
-        // POST: Comentario/Delete/5
+        [Authorize]
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {

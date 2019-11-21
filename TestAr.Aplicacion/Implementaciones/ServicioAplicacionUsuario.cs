@@ -105,5 +105,26 @@ namespace TestAr.Aplicacion.Implementaciones
         {
             return _roleRepositorio.ObtenerPor(x => x.IdRole == idRole).FirstOrDefault();
         }
+
+        public UsuarioDTO Login(string email, string password)
+        {
+            var usuario = _usuarioRepositorio.ObtenerPor(x => x.Email.ToLower() == email.ToLower() && x.Clave == password)
+                .Select(x => new UsuarioDTO
+                {
+                    IdUsuario = x.IdUsuario,
+                    Nombre = x.Nombre,
+                    Clave = x.Clave,
+                    CodRole = x.CodRole,
+                    Direccion = x.Direccion,
+                    Email = x.Email,
+                    Telefono = x.Telefono
+                }).FirstOrDefault();
+
+            if (usuario != null)
+                usuario.RoleAsociado = ObtenerRole(usuario.CodRole);
+
+            return usuario;
+
+        }
     }
 }
